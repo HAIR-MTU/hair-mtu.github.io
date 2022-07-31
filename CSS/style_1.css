@@ -449,6 +449,11 @@ nav a{
 	color:white;
 }
 
+.icons_sm {
+	max-height: 20px;
+	max-width: 20px;
+}
+
 .Right_PI{
 		text-align: left;
 		font-size: 1em;
