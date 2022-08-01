@@ -275,7 +275,7 @@ nav ul li:hover ul {
 
 #body_profile {
 	background: white;
-	padding:2em 2em 0 2em;
+	padding:2.5em 2em 0 2em;
 	flex: 1 1 60%;
 	order: 2;
 	text-align: justify;
