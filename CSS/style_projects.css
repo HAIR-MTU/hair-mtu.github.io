@@ -1,0 +1,34 @@
+/* CSS for project and publication pages */
+
+/*h4{
+	padding:1em 0 0 0
+}*/
+#project-date{
+	padding:1em 0 .5em 0
+}
+#project-descriptor {
+	padding: 1em 0 0 0;
+	list-style-type: none;
+}
+
+#project-descriptor li{
+	padding: .3em 0 0 0;
+}
+
+#project-title a:link {
+	color:#666666ff;
+}
+#project-title a:visited {
+	color:#666666ff;
+}
+#project-title a:hover {
+	background-color:#7da0d9ff;
+	color:white;
+}
+#body_p{
+	padding:0 0 1em 0;
+}
+
+#opportunities{
+	padding:0 0 0 0;
+}
