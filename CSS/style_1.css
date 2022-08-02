@@ -10,12 +10,16 @@
 		display: flex;
 		justify-content: center;
 		height:100%;
-		overflow-y: scroll;
+		max-height:100vh;
+		display:flex;
 	}
 	body {
 	    font-family: sans-serif;
 	    font-size: 16px;
-			min-height: 100vh;
+			height:100%;
+			max-height: 100vh;
+			min-height:100vh;
+
 	}
 	nav {
 	    background:#7da0d9ff;
@@ -38,9 +42,8 @@
 
 	footer {
 		background:#7da0d9ff;
+		height:15vh;
 	  display: flex;
-		height: 10vh;
-		padding: 0 .4em;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
@@ -272,18 +275,47 @@ nav ul li ul li {
 nav ul li:hover ul {
   display:block;
 }
-
+#body_index {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#navigation{
+	order: 0;
+}
+#footer{
+	order: 2;
+	flex-shrink: 0;
+}
 #body_profile {
 	background: white;
-	padding:2em 2em 0 2em;
+	padding:2.5em 2em 0 2em;
 	flex: 1 1 60%;
-	order: 2;
+	order: 1;
 	text-align: justify;
-	height: 75vh;
-	max-width: 900px;
+	max-width: 50%;
+	max-height:100%;
+	display:flex;
+	flex-direction: column;
 	}
 #body_profile p {
 	padding: .5em 0 0 0
+}
+
+#body_block1 {
+	flex: 1 1 40%;
+}
+#body_block2 {
+	flex: 1 1 30%;
+	padding: 2em 0 0 0;
+
+}
+#body_block3 {
+	flex: 1 1 30%;
+	padding: 2em 0 0 0;
+}
+.body_block h4{
+	padding: 0 0 1em 0;
 }
 .staff {
 	display:flex;
@@ -319,10 +351,8 @@ nav ul li:hover ul {
 		text-align:left;
 	}
 #body_profile h4{
-		padding: 1em 0 0 0;
 		text-align:left;
 }
-
 #PIs {
 	padding: .3em 0 .3em 0;
 	display: flex;
@@ -332,34 +362,53 @@ nav ul li:hover ul {
 }
 #PIs img{
 	padding: .3em 0 .3em 0;
+	max-width:150px;
+	max-height:150px;
 	text-align:center;
 }
 #PIs h4{
 	text-align:center;
+	padding-top:-1em;
 }
 #PI_1 {
 	text-align: center;
 	padding-right:2em;
 }
 #PI_1 div{
-	padding: 1em 0 1em 0;
+	padding: 0 0 0 0;
 }
 #PI_2 {
 	text-align: center;
 	padding-left:2em;
 }
 #PI_2 div{
-	padding: 1em 0 1em 0;
+	padding: 0 0 0 0;
 }
+#PI_main {
+	padding: .3em 0 .3em 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+#PI_main div a img{
+	padding: .3em 0 .3em 0;
+	max-width:100px;
+	max-height:100px;
+	text-align:center;
+}
+#PI_main h5{
+	text-align:right;
+}
+
 #PI_side {
 	padding: .3em 0 .3em 0;
 	display: flex;
 	flex-direction: column;
-	flex-wrap:wrap;
-	justify-content: center;
+	justify-content: space-around;
 	box-sizing: border-box;
 }
-#PI_side img{
+#PI_side div a img{
 	padding: .3em 0 .3em 0;
 	max-width:100px;
 	max-height:100px;
@@ -368,24 +417,15 @@ nav ul li:hover ul {
 #PI_side h5{
 	text-align:center;
 }
+
 #left_PI {
 	background: white;
 	flex: 1 1 30%;
-	order: 1;
+	order: 0;
 	padding: .1em 0 1em 8em;
 	text-align: center;
 	max-width: 350px;
-}
-#navigation_left_PI {
-	background: white;
-	flex: 1 1 30%;
-	order: 1;
-	padding: .1em 0 1em 10em;
-	text-align: center;
-	max-width: 400px;
-}
-#navigation_left_PI h4{
-	padding:.5em 0 1em 0;
+
 }
 #description{
 	text-align:justify;
@@ -422,7 +462,6 @@ nav ul li:hover ul {
 
 #box_right h3{
 	padding: .5em 0 .5em 0;
-	text-align:left;
 }
 .box_p img{
 	max-width:120px;
@@ -459,7 +498,7 @@ nav a{
 	width: 100%;
 	padding-top: 2em;
 	max-width:200px;
-	max-height:600px;
+	max-height:100%;
 }
 .profile h3{
 	text-align:center;
@@ -489,8 +528,11 @@ nav a{
 	padding:1em 0 1em 0;
 	text-align: left;
 	margin: 0 10px 10px 0;
-
 }
+.profile h4{
+	padding: 1em 0 0 0
+}
+
 #profile_social li{
 	margin: 0 .5em .5em 0;
 }
@@ -570,4 +612,13 @@ li img{
 .example {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-} /**/
+}
+#h_centered{
+	text-align:center;
+}
+.h_left{
+	text-align:left;
+}
+.footer {
+  flex-shrink: 0;
+}
