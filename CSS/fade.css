@@ -12,7 +12,7 @@ body {
 }
 
 
-.Right_PI,#Metrics,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,#body_index, #body_profile{
+.Right_PI,#Metrics,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,#body_index, #body_profilePI{
 	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
 	 -moz-animation: fadein 1s; /* Firefox < 16 */
 		-ms-animation: fadein 1s; /* Internet Explorer */
@@ -56,7 +56,9 @@ section{
 	  transform-origin:right;
 	  animation: grow .2s forwards;
 	}
-
+.wipe_right{
+	padding-top:1em;
+}
 	@keyframes grow {
 	  from {
 	    width:0px;
