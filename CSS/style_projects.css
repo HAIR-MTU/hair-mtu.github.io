@@ -35,3 +35,11 @@
 #project-block{
 	padding: 1em 0 0 0;
 }
+.staff_half{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.staff_size{
+	width:50%;
+}
