@@ -1,9 +1,4 @@
 
-#navigating{
-  max-width:auto;
-  align-items: center;
-  justify-content: center;
-}
 .menu {
     background: none;
     display: flex;
@@ -62,13 +57,10 @@ max-width:225px;
 border-bottom:1px solid rgba(255,255,255,.3);
 
 }
-
 nav ul li:hover ul {
-display:flex;
-flex-direction:column;
+  display:flex;
+  flex-direction: column;
 }
-
-
 
 .menu li{
   align-items: center;
