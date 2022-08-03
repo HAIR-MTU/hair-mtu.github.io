@@ -1,76 +1,124 @@
-<!DOCTYPE html>
-<html lang=“en-IE”>
-<head>
- 	<meta charset=“utf-8”>
-  <link rel="stylesheet" href="CSS/style_1.css">
-  <link rel="stylesheet" href="CSS/fade.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <title>Human Centred Artifical Intelligence Research Group (HAIR)</title>
- <body id="body_index" class="body_fade">
-  <header>
-    <nav id = "navigation">
-        <ul class="menu">
-          <li class="item"><a href="index.html">Home</a></li>
-          <li class="item has-submenu">
-              <a tabindex="0">Staff</a>
-              <ul class="submenu">
-                <li><a tabindex="0" href="Pages/pi.html">Principal Investigators</a></li>
-                <li class="subitem"><a href="Pages/researchers.html">Researchers</a></li>
-                <li class="subitem"><a href="Pages/students.html">Students</a></li>
-                </ul>
-          </li>
-          <li class="item has-submenu">
-              <a tabindex="0">Projects</a>
-              <ul class="submenu">
-                  <li class="subitem"><a href="Pages/project_active.html">Active</a></li>
-                  <li class="subitem"><a href="Pages/project_innactive.html">Finished</a></li>
-                </ul>
-          </li>
-          <li class="item"><a href="Pages/publications.html">Publications</a>
-          </li>
-          <li class="item"><a href="Pages/tools.html">Tools</a></li>
-          </li>
-          <li class="item"><a href="Pages/opportunities.html">Opportunities</a></li>
-          </li>
-          <li class="item"><a href="Pages/collaborators.html">Collaborators</a></li>
-          </li>
-          <li class="item"><a href="Pages/mtu.html">MTU</a></li>
-          </li>
-          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-        </ul>
-    </nav>
-	</header>
-	<main>
-    <div id="body_profile">
-      <div class="PI">
-        <div class="profile_text">
-          <h3>Background:</h3>
-          <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-          <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-        </div>
-      </div>
-  </div>
-    <div id="left_PI">
-      <div class="profile">
-          <img id="picture_hair" src="Figures/medusa.jpg">
-          <h4>Human-centred Artificial Intelligence Research Group</h4>
-          <div id="container_affiliation">
-            <h3 id="affiliation">Affiliation:</h3>
-            <div class="box_a affiliation1"><a href="https://www.mtu.ie/" target="_blank"><img src="Figures/MTU.svg" alt="Munster Technological University" width="85%" height="85%"></a></div>
-            <div class="box_a affiliation2"><a href="https://www.adaptcentre.ie/" target="_blank"><img src="Figures/Adapt.png" alt="ADAPTCentre"  width="60%" height="60%"></a></div>
-          </div>
-        </div>
-      </div>
-  <div id="box_right">
-    <h3 id="h_left">News:</h3>
-  </div>
-  </main>
-	<footer id="footer">
-    </p>
-    <address>
-    <strong><abbr title="Human-Centred Artificial Intelligence Research Group">HAIR</abbr> -</strong> Munster Technological University, room J107 Melbourne Building, Rosa Avenue, Cork City - Ireland. <a href="">MAP</a>. Contact us <a href="mailto:homer@example.com"> - homer@example.com</a>
-    </address>
-    <p><small>&copy; 2022 Human-Centred Artificial Intelligence Research</small><p>
-  </footer>
-</body>
-</html>
+/* CSS for project and publication pages */
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+		font-family: sans-serif;
+		font-size: 16px;
+		min-height: 100vh;
+}
+
+
+.Right_PI,#Metrics,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,.menu, .affiliation_index, address, #footer p, #body_profilePI, #body_profile{
+	-webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+	 -moz-animation: fadein .5s; /* Firefox < 16 */
+		-ms-animation: fadein .5s; /* Internet Explorer */
+		 -o-animation: fadein .5s; /* Opera < 12.1 */
+				animation: fadein .5s;
+}
+
+
+	@keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+
+/*sliding bar*/
+section{
+	  background:#7da0d9ff;
+	  height:2px;
+	  position:relative;
+	  transform-origin:right;
+	  animation: grow .2s forwards;
+	}
+.wipe_right{
+	padding-top:1em;
+}
+	@keyframes grow {
+	  from {
+	    width:0px;
+	  }
+	  to {
+	    width:100%;
+	  }
+	}
+	/*section {
+	  position: relative;
+	  width: 100%;
+		height: 5px;
+	  padding: 0;
+	  transition: all 1s;
+	}
+	section:after {
+	  position: absolute;
+	  z-index: 9;
+	  content: "";
+	  transition: all 1s;
+	}
+	section.wipe-down:after, section.wipe-up:after {
+	  left: 0;
+	  width: 100%;
+	  height: 0;
+	}
+	section.wipe-left:after, section.wipe-right:after {
+	  top: 0;
+	  width: 0;
+	  height: 100%;
+	}
+	section.wipe-down {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-down:after {
+	  top: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-left {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-left:after {
+	  right: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-right {
+	  background-color: white;
+	}
+	section.wipe-right:after {
+	  left: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-up {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-up:after {
+	  bottom: 0;
+	  background-color: #7da0d9ff;
+	}
+	section:hover:after {
+	  width: 100%;
+	  height: 100%;
+	}*/
