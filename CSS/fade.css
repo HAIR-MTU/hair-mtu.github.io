@@ -12,7 +12,7 @@ body {
 }
 
 
-.Right_PI,#Metrics,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,.menu, .affiliation_index, address, #footer p, #body_profilePI, #body_profile{
+.Right_PI,#Metrics,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side, .affiliation_index, address, #footer p, #body_profilePI, #body_profile{
 	-webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
 	 -moz-animation: fadein .5s; /* Firefox < 16 */
 		-ms-animation: fadein .5s; /* Internet Explorer */
