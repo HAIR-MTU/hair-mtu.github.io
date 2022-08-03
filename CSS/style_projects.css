@@ -43,3 +43,28 @@
 .staff_size{
 	width:50%;
 }
+.collaborators_half{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width:100%;
+}
+.collaborators_half h4{
+	padding: 0 0 1em 0;
+}
+.container_partners {
+	padding: .3em 1em .3em 1em;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width:40%;
+}
+.collaborators_logo {
+	max-height:auto;
+	max-width:auto;
+	padding: .3em 0 .3em 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
