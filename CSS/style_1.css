@@ -411,3 +411,15 @@ li img{
 .footer {
   flex-shrink: 0;
 }
+#PIs div div:hover a{
+opacity:0.5;
+}
+#PIs div div:hover h4{
+	color:gray;
+	}
+#PI_side div:hover a{
+	opacity:0.5;
+	}
+#PI_side div:hover h5{
+	color:gray;
+	}
