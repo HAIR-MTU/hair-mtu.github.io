@@ -268,14 +268,7 @@
 #container_affiliations {
 	height:300px;
 }
-#container_partners {
-	max-height:70vh;
-	max-width:100%
-	padding: .3em 0 .3em 0;
-	display: flex;
-	flex-direction: row;
-	box-sizing: border-box;
-}
+
 .box_a img{
 	max-width:150px;
 	max-height:150px;
