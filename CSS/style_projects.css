@@ -50,7 +50,9 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	width:100%;
+	min-width:50vw;
+	max-width:70vw;
+	max-height:75vh;
 }
 #collaborators_text{
 	align-items: flex-start;
@@ -65,6 +67,7 @@
 	justify-content: start;
 	align-content: flex-start;
 	width:50%;
+	max-width:50%;
 }
 .collaborators_half h4{
 	padding: 0 0 1em 0;
@@ -82,9 +85,11 @@
 }
 #collaborators_side{
 	width:40%;
+
 }
 #world_map img{
 	max-width:100%;
+
 }
 .collaborators_logo {
 	max-height:auto;
@@ -113,6 +118,7 @@
 }
 #country_map{
 	min-height:200px;
+	max-height:200px;
 	padding: 0 0 1em 0;
 }
 #box_right_collaborators ul{
@@ -131,3 +137,43 @@
 	padding: 0 0 1em 0;
 	text-align: left;
 }
+#TCD_right, #UCC_right, #Teagasc_right, #Ulster_right, #Embrapa_right, #Cerela_right, #Tohoku_right{
+	display:none;
+	}
+#TCD_text, #UCC_text, #Teagasc_text, #Ulster_text, #Embrapa_text, #Cerela_text, #Tohoku_text{
+	display:none;
+	}
+
+	#TCD_text p, #UCC_text p, #Teagasc_text p, #Ulster_text p, #Embrapa_text p, #Cerela_text p, #Tohoku_text p #TCD_right li, #UCC_right li, #Teagasc_right li, #Ulster_right li, #Embrapa_right li, #Cerela_right li, #Tohoku_right li{
+		-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+		 -moz-animation: fadein 1s; /* Firefox < 16 */
+			-ms-animation: fadein 1s; /* Internet Explorer */
+			 -o-animation: fadein 1s; /* Opera < 12.1 */
+					animation: fadein 1s;
+	}
+
+
+		@keyframes fadein {
+			from { opacity: 0.5; }
+			to   { opacity: 1; }
+		}
+
+		/* Firefox < 16 */
+		@-moz-keyframes fadein {
+			from { opacity: 0.5; }
+			to   { opacity: 1; }
+		}
+
+		/* Safari, Chrome and Opera > 12.1 */
+		@-webkit-keyframes fadein {
+			from { opacity: 0.5; }
+			to   { opacity: 1; }
+		}
+
+		/* Internet Explorer */
+		@-ms-keyframes fadein {
+			from { opacity: 0.5; }
+			to   { opacity: 1; }
+		}
+
+		@import url("https://fonts.googleapis.com/css?family=Montserrat");

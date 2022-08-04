@@ -12,7 +12,15 @@
 	    font-size: 16px;
 			height:auto;
 			max-height: auto;
+			overflow: auto;
+			-ms-overflow-style: none; /* for Internet Explorer, Edge */
+  		scrollbar-width: none; /* for Firefox */
+  		overflow-y: scroll;
 	}
+	body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 	main {
 		display: flex;
 		justify-content: center;
@@ -25,6 +33,7 @@
 	    background:#7da0d9ff;
 	    padding: 0 1em;
 			height: 15vh;
+			min-height:15vh;
 	}
 	a {
 	   /* color: white; */
@@ -43,6 +52,7 @@
 	footer {
 		background:#7da0d9ff;
 		height:10vh;
+		min-height:10vh;
 	  display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -86,7 +96,7 @@
 }
 #body_profile {
 	background: white;
-	padding:2.5em 2em 0 2em;
+	padding:2.5em 2em 1em 2em;
 	flex: 1 1 60%;
 	order: 1;
 	text-align: justify;
@@ -431,3 +441,4 @@ opacity:0.5;
 .box_p img:hover {
 	opacity:0.5;
 }
+.js .accordion:nth-child(n+1) { display: none }

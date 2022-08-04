@@ -12,6 +12,41 @@ body {
 }
 
 
+/*.Right_PI,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,#body_profilePI{
+	-webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 
+	 -moz-animation: fadein .5s;
+		-ms-animation: fadein .5s;
+		 -o-animation: fadein .5s;
+				animation: fadein .5s;
+}*/
+
+
+	@keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
 
 /*sliding bar*/
 section{
