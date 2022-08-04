@@ -1,58 +1,20 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+document.getElementById("partners1").addEventListener("click", function(){mySecondFunction("TCD_")});
+document.getElementById("partners2").addEventListener("click", function(){mySecondFunction("UCC_")});
+document.getElementById("partners3").addEventListener("click", function(){mySecondFunction("Teagasc_")});
+document.getElementById("partners4").addEventListener("click", function(){mySecondFunction("Ulster_")});
+document.getElementById("partners5").addEventListener("click", function(){mySecondFunction("Embrapa_")});
+document.getElementById("partners6").addEventListener("click", function(){mySecondFunction("Cerela_")});
+document.getElementById("partners7").addEventListener("click", function(){mySecondFunction("Tohoku_")});
 
-/* Toggle mobile menu */
-function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
+function mySecondFunction(info_1){
 
-        // adds the menu (hamburger) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
-    } else {
-        menu.classList.add("active");
-
-        // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
-    }
+  var info_text = info_1;
+  $(".collaborators_text_att").hide();
+  var y = document.getElementById("collaborators_text");
+  y.style.display = "none";
+  var z = document.getElementById(info_text+"text");
+  z.style.display = "block";
+  $(".collaborators_right_att").hide();
+  var rightbar = document.getElementById(info_text+"right");
+  rightbar.style.display = "block";
 }
-
-/* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);
-
-const items = document.querySelectorAll(".item");
-
-/* Activate Submenu */
-function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
-  } else {
-    this.classList.add("submenu-active");
-  }
-}
-
-/* Event Listeners */
-for (let item of items) {
-    if (item.querySelector(".submenu")) {
-      item.addEventListener("click", toggleItem, false);
-      item.addEventListener("keypress", toggleItem, false);
-    }
-}
-
-/* Close Submenu From Anywhere */
-function closeSubmenu(e) {
-  if (menu.querySelector(".submenu-active")) {
-    let isClickInside = menu
-      .querySelector(".submenu-active")
-      .contains(e.target);
-
-    if (!isClickInside && menu.querySelector(".submenu-active")) {
-      menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    }
-  }
-}
-
-/* Event listener */
-document.addEventListener("click", closeSubmenu, false);
