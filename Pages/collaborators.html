@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <title>Human Centred Artifical Intelligence Research Group (HAIR)</title>
  <body id="body_index">
+
   <header>
     <nav id = "navigation">
       <div id="navigating">
@@ -41,48 +42,74 @@
           </li>
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
-      </id>
+      </div>
     </nav>
 	</header>
 	<main>
-    <div id="body_profile" class="collaborators_body">
-      <h3>Partners:</h3>
-        <div class="collaborators_half">
+    <div id="body_profile">
+      <div id="collaborators_body">
+        <div id="collaborators_side">
         <div class="container_partners">
           <h4>Universities and Research institutes:</h4>
           <div class="collaborators_logo">
-            <div class="box_p partners1"><a href="https://www.tcd.ie/" target="_blank"><img src="../Figures/TrinityCD.png" alt="Trinity College Dublin"></a></div>
-            <div class="box_p partners2"><a href="https://www.ucc.ie/" target="_blank"><img src="../Figures/UCC.png" alt="University College Cork"></a></div>
-            <div class="box_p partners3"><a href="https://www.teagasc.ie/" target="_blank"><img src="../Figures/teagasc.png" alt="Teagasc"></a></div>
-            <div class="box_p partners4"><a href="https://www.ulster.ac.uk/" target="_blank"><img src="../Figures/ulster.png" alt="Ulster University"></a></div>
-            <div class="box_p partners5"><a href="https://www.embrapa.br/pecuaria-sudeste" target="_blank"><img src="../Figures/embrapa.png" alt="EMBRAPA"></a></div>
-            <div class="box_p partners6"><a href="https://cerela.conicet.gov.ar/" target="_blank"><img src="../Figures/Cerella.jpeg" alt="Cerella/Conicet"></a></div>
-          <div class="box_p partners7"><a href="http://www.tohoku.ac.jp/en/" target="_blank"><img src="../Figures/Tohoku.png" alt="Tohoku University"></a></div>
+            <div class="box_p" id="partners1"><img src="../Figures/TrinityCD.png" alt="Trinity College Dublin" type="button"></div>
+            <div class="box_p" id="partners2"><img src="../Figures/UCC.png" alt="University College Cork" type=" button"></div>
+            <div class="box_p" id="partners3"><img src="../Figures/teagasc.png" alt="Teagasc" type="button"></div>
+            <div class="box_p" id="partners4"><img src="../Figures/ulster.png" alt="Ulster University" type=" button"></div>
+            <div class="box_p" id="partners5"><img src="../Figures/embrapa.png" alt="EMBRAPA" type=" button"></div>
+            <div class="box_p" id="partners6"><img src="../Figures/Cerella.jpeg" alt="Cerella/Conicet" type=" button"></div>
+          <div class="box_p" id="partners7"><img src="../Figures/Tohoku.png" alt="Tohoku University" type=" button"></div>
           </div>
         </div>
         <div class="container_partners">
           <h4>Companies:</h4>
           <div class="collaborators_logo">
+            <div class="box_p" id="partners8"><a href="https://www.tcd.ie/" target="_blank"><img src="../Figures/company1.png" alt="" type=" button"></a></div>
+            <div class="box_p" id="partners9"><a href="https://www.embrapa.br/pecuaria-sudeste" target="_blank"><img src="../Figures/company2.png" alt="" type=" button"></a></div>
           </div>
         </div>
+
       </div>
-  </div>
+      <div class="collaborators_half">
+        <h4 id="collaboration_details">Details:</h4>
+        <div id="collaborators_text">
+          <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          <h4>Collaborators map:</h4>
+          <p id="world_map"><img src="../Figures/world_map.png"></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
     <div id="left_PI">
       <div class="profile">
           <img id="picture_hair" src="../Figures/medusa.jpg">
           <h4>Human-centred Artificial Intelligence Research Group</h4>
-
           <div id="container_affiliation">
             <h3 id="affiliation">Affiliation:</h3>
             <div class="box_a affiliation1"><a href="https://www.mtu.ie/" target="_blank"><img src="../Figures/MTU.svg" alt="Munster Technological University" width="85%" height="85%"></a></div>
             <div class="box_a affiliation2"><a href="https://www.adaptcentre.ie/" target="_blank"><img src="../Figures/Adapt.png" alt="ADAPTCentre"  width="60%" height="60%"></a></div>
           </div>
         </div>
-      </div>
-  </div>
-  <div id="box_right">
 
   </div>
+  <div id="box_right_collaborators">
+    <div id="div_collaborators">
+      <div id="country_map"></div>
+      <div id="list_collaborators">
+          <ul>
+              <li><strong>Country:</strong> Japan</li>
+              <li><strong>Projects:</strong> 2</li>
+              <li><strong>Total Budget:</strong> xxx</li>
+              <li><strong>Budget allocated:</strong> xxx</li>
+              <li><strong>Students:</strong> 0</li>
+              <li><strong>Publications:</strong> 0</li>
+            </ul>
+        </div>
+  </div>
+</div>
+  <script src="../Scripts/script.js"></script>
   </main>
 	<footer id="footer">
     </p>
@@ -91,6 +118,5 @@
     </address>
     <p><small>&copy; 2022 Human-Centred Artificial Intelligence Research</small><p>
   </footer>
-  <!--<script src="Scripts/script.js"></script>-->
 </body>
 </html>
