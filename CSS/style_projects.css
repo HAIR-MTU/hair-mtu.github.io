@@ -28,6 +28,9 @@
 #body_p{
 	padding:0 0 1em 0;
 }
+.box_p{
+	padding:.5em .5em .5em .5em;
+}
 
 #opportunities{
 	padding:0 0 0 0;
@@ -43,11 +46,25 @@
 .staff_size{
 	width:50%;
 }
-.collaborators_half{
+#collaborators_body{
 	display:flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	width:100%;
+}
+#collaborators_text{
+	align-items: flex-start;
+}
+#collaborators_text h4{
+	padding: 1em 0 1em 0;
+}
+
+.collaborators_half{
+	display:flex;
+	flex-direction: column;
+	justify-content: start;
+	align-content: flex-start;
+	width:50%;
 }
 .collaborators_half h4{
 	padding: 0 0 1em 0;
@@ -57,14 +74,60 @@
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
+	width:auto;
+}
+
+.container_partners h4{
+	padding: 0 0 1em 0;
+}
+#collaborators_side{
 	width:40%;
+}
+#world_map img{
+	max-width:100%;
 }
 .collaborators_logo {
 	max-height:auto;
 	max-width:auto;
-	padding: .3em 0 .3em 0;
+	padding: .3em .5em .3em .5em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	box-sizing: border-box;
+}
+
+#box_right_collaborators {
+	background: white;
+	flex: 1 1 30%;
+	order: 2;
+	padding: 2em 6em 0 2em;
+	text-align: center;
+	max-width: 350px;
+	height: 100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+#div_collaborators{
+	display: none;
+}
+#country_map{
+	min-height:200px;
+	padding: 0 0 1em 0;
+}
+#box_right_collaborators ul{
+	text-align: left;
+	list-style-type: none;
+}
+#box_right_collaborators ul li{
+	padding: .5em 0 .5em 0;
+}
+#box_right_collaborators img{
+	padding: 0 0 1em 0;
+	max-width:150px;
+	max-height:150px;
+}
+#box_right_collaborators h4{
+	padding: 0 0 1em 0;
+	text-align: left;
 }
