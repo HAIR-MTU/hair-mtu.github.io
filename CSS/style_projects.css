@@ -144,7 +144,7 @@
 	display:none;
 	}
 
-	#TCD_text p, #UCC_text p, #Teagasc_text p, #Ulster_text p, #Embrapa_text p, #Cerela_text p, #Tohoku_text p #TCD_right li, #UCC_right li, #Teagasc_right li, #Ulster_right li, #Embrapa_right li, #Cerela_right li, #Tohoku_right li{
+#country_map img, #TCD_text p, #UCC_text p, #Teagasc_text p, #Ulster_text p, #Embrapa_text p, #Cerela_text p, #Tohoku_text p #TCD_right li, #UCC_right li, #Teagasc_right li, #Ulster_right li, #Embrapa_right li, #Cerela_right li, #Tohoku_right li{
 		-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
 		 -moz-animation: fadein 1s; /* Firefox < 16 */
 			-ms-animation: fadein 1s; /* Internet Explorer */
