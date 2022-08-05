@@ -95,6 +95,7 @@
 #footer{
 	order: 2;
 	flex-shrink: 0;
+	color:white;
 }
 #body_profile {
 	background: white;
