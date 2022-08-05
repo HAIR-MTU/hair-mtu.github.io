@@ -5,13 +5,6 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-body {
-		font-family: sans-serif;
-		font-size: 16px;
-		min-height: 100vh;
-}
-
-
 /*.Right_PI,#menuPI,.profile_text, #PI_name, .profile h5, #description,#PI_side,#body_profilePI{
 	-webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 
 	 -moz-animation: fadein .5s;
