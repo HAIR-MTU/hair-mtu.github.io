@@ -42,6 +42,7 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
+
 }
 .staff_size{
 	width:50%;
@@ -51,8 +52,9 @@
 	flex-direction: row;
 	justify-content: center;
 	min-width:50vw;
-	max-width:70vw;
+	max-width:auto;
 	max-height:75vh;
+
 }
 #collaborators_text{
 	align-items: flex-start;
@@ -64,28 +66,26 @@
 .collaborators_half{
 	display:flex;
 	flex-direction: column;
-	justify-content: start;
-	align-content: flex-start;
 	width:50%;
 	max-width:50%;
+	padding:0 2em 1em 1em;
 }
 .collaborators_half h4{
 	padding: 0 0 1em 0;
 }
 .container_partners {
-	padding: .3em 1em .3em 1em;
+	padding: 0 1em .3em 2em;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	width:auto;
+	max-width:90%;
 }
 
 .container_partners h4{
 	padding: 0 0 1em 0;
 }
 #collaborators_side{
-	width:40%;
-
+	width:50%;
 }
 #world_map img{
 	max-width:100%;
@@ -105,13 +105,17 @@
 	background: white;
 	flex: 1 1 30%;
 	order: 2;
-	padding: 2em 6em 0 2em;
+	padding: 2em 4em 0 0;
 	text-align: center;
 	max-width: 350px;
 	height: 100%;
 	display:flex;
 	flex-direction:column;
 	justify-content: space-around;
+}
+.collaborators_text_att{
+	max-width:100%;
+	padding: 0 1em 0 0;
 }
 #div_collaborators{
 	display: none;
@@ -136,6 +140,9 @@
 #box_right_collaborators h4{
 	padding: 0 0 1em 0;
 	text-align: left;
+}
+.collaborators_right_att{
+	padding: 0 0 0 6em;
 }
 #TCD_right, #UCC_right, #Teagasc_right, #Ulster_right, #Embrapa_right, #Cerela_right, #Tohoku_right{
 	display:none;
