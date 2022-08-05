@@ -51,7 +51,7 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	min-width:50vw;
+	min-width:auto;
 	max-width:auto;
 	max-height:75vh;
 
@@ -66,15 +66,15 @@
 .collaborators_half{
 	display:flex;
 	flex-direction: column;
-	width:50%;
-	max-width:50%;
-	padding:0 2em 1em 1em;
+	width:60%;
+	max-width:60%;
+	padding:0 0 1em 1em;
 }
 .collaborators_half h4{
 	padding: 0 0 1em 0;
 }
 .container_partners {
-	padding: 0 1em .3em 2em;
+	padding: 0 0 .3em 2em;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -85,7 +85,7 @@
 	padding: 0 0 1em 0;
 }
 #collaborators_side{
-	width:50%;
+	width:40%;
 }
 #world_map img{
 	max-width:100%;
@@ -142,7 +142,7 @@
 	text-align: left;
 }
 .collaborators_right_att{
-	padding: 0 0 0 6em;
+	padding: 0 0 0 4em;
 }
 #TCD_right, #UCC_right, #Teagasc_right, #Ulster_right, #Embrapa_right, #Cerela_right, #Tohoku_right{
 	display:none;
