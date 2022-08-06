@@ -108,7 +108,6 @@
 	display:flex;
 	flex-direction: column;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
 	}
 #body_profile p {
 	padding: .5em 0 0 0;
@@ -238,24 +237,17 @@
 	padding: .1em 0 1em 8em;
 	text-align: center;
 	max-width: 350px;
-
+	font-size: 14px;
+}
+#left_PI h4{
+	font-size: 16px;
 }
 #description{
 	text-align:justify;
-	font-size:.9em;
 	width:100%;
 	max-width:100%;
 }
-#left_bar{
-		padding-top:2em;
-		padding-left:1em;
-		text-align: left;
-		list-style-type: none;
-		font-size: 1em;
-}
-#left_bar li{
-	margin: 0 10px 10px 0;
-}
+
 #affiliation{
 	padding: 1em 0 0 0;
 }
@@ -268,6 +260,10 @@
 	text-align: center;
 	max-width: 350px;
 	height: 100%;
+	font-size: 14px;
+}
+#box_right h4, #box_right h3{
+	font-size: 18px;
 }
 
 #box_right p{
@@ -369,7 +365,6 @@ nav a{
 
 .Right_PI{
 		text-align: left;
-		font-size: 1em;
 		padding-left:1em;
 }
 .Right_PI li{
