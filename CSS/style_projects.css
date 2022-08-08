@@ -66,8 +66,8 @@
 .collaborators_half{
 	display:flex;
 	flex-direction: column;
-	width:60%;
-	max-width:60%;
+	width:55%;
+	max-width:55%;
 	padding:0 0 1em 1em;
 }
 .collaborators_half h4{
@@ -85,7 +85,7 @@
 	padding: 0 0 1em 0;
 }
 #collaborators_side{
-	width:40%;
+	width:45%;
 }
 #world_map img{
 	max-width:100%;
