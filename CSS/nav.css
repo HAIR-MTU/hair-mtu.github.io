@@ -6,10 +6,12 @@
     align-items: center;
     justify-content: center;
     font-size: 1.3em;
-    padding-top:1.8em;
     width: auto;
+    min-height:15vh;
 }
-
+#navigating{
+  min-height:15vh;
+}
 .item {
     order: 0;
     position: relative;
