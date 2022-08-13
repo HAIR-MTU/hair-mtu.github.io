@@ -32,6 +32,7 @@
 	}
 	nav {
 	    background:#7da0d9ff;
+			align-items:center;
 	    padding: 0 1em;
 			height: 15vh;
 			min-height:15vh;
@@ -43,6 +44,7 @@
 
 	p {
 		padding: .2em .4em;
+		line-height:140%;
 	}
 	h1 {
 		padding: .5em;
