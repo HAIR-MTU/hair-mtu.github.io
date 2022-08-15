@@ -1,0 +1,120 @@
+/* CSS for project and publication pages */
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.publication_div, .main_half{
+	-webkit-animation: fadein .5s;
+	 -moz-animation: fadein .5s;
+		-ms-animation: fadein .5s;
+		 -o-animation: fadein .5s;
+				animation: fadein .5s;
+}
+
+
+	@keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+		from { opacity: 0.5; }
+		to   { opacity: 1; }
+	}
+
+	@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+
+/*sliding bar*/
+section{
+	  background:#214478ff;
+	  height:2px;
+	  position:relative;
+	  transform-origin:right;
+	  animation: grow .2s forwards;
+	}
+
+
+.wipe_right{
+	padding: 1em 0 1em 0;
+}
+	@keyframes grow {
+	  from {
+	    width:0px;
+	  }
+	  to {
+	    width:100%;
+	  }
+	}
+	/*section {
+	  position: relative;
+	  width: 100%;
+		height: 5px;
+	  padding: 0;
+	  transition: all 1s;
+	}
+	section:after {
+	  position: absolute;
+	  z-index: 9;
+	  content: "";
+	  transition: all 1s;
+	}
+	section.wipe-down:after, section.wipe-up:after {
+	  left: 0;
+	  width: 100%;
+	  height: 0;
+	}
+	section.wipe-left:after, section.wipe-right:after {
+	  top: 0;
+	  width: 0;
+	  height: 100%;
+	}
+	section.wipe-down {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-down:after {
+	  top: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-left {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-left:after {
+	  right: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-right {
+	  background-color: white;
+	}
+	section.wipe-right:after {
+	  left: 0;
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-up {
+	  background-color: #7da0d9ff;
+	}
+	section.wipe-up:after {
+	  bottom: 0;
+	  background-color: #7da0d9ff;
+	}
+	section:hover:after {
+	  width: 100%;
+	  height: 100%;
+	}*/
